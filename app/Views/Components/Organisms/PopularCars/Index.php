@@ -24,10 +24,12 @@
       'price' => '$550',
       'image' => 'images/porsche.png'
     ]
-  ]
+  ];
+
 ?>
 
-<section id="popular-cars" class="container lg:p-[100px] mt-20 bg-[#F5F6F6]">
+<section id="popular-cars" class="bg-[#F5F6F6] w-full">
+  <div class="xl:container mx-auto lg:p-[100px] mt-20">
   <div class="heading flex flex-col gap-1">
     <h1 class="text-primary font-bold text-[26px] leading-[39px]">
       Popular Cars
@@ -59,4 +61,5 @@
       </div>
     <?php endforeach; ?>
   </section>
+  </div>
 </section>

@@ -23,7 +23,7 @@
   ]
 ?>
 
-<section id="benefits" class="container lg:p-[100px] mt-20">
+<section id="benefits" class="xl:container lg:p-[100px] mx-auto mt-20">
   <div class="grid grid-rows grid-cols-12 justify-items-center items-center relative top-0 left-0 right-0 z-0">
     <div class="col-span-6 w-full">
       <div class="box-testimonial flex w-full justify-center relative top-0 left-0 right-0">

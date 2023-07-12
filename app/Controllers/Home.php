@@ -9,10 +9,18 @@ class Home extends BaseController
     public function index()
     {
         $productsModel = new ProductsModel();
-        $listProducts = $productsModel->findAll();
-
-        return view('Pages/IndexView', [
-            'listProducts' => $listProducts
-        ]);
+        
+        try {
+            $listProducts = $productsModel->findAll();
+            
+            // Set list products into global variables
+            $GLOBALS['listProducts'] = $listProducts;
+            
+            return view('Pages/IndexView', [
+                'listProducts' => $listProducts
+            ]);
+        } catch (\Exception $e) {
+            die($e->getMessage());
+        }
     }
 }

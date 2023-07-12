@@ -33,5 +33,6 @@
   </main>
 
   <?= $this->include('Components/Organisms/Footer/Index'); ?>
+  <?= $this->include('Components/Atoms/Copyright/Index'); ?>
 </body>
 </html>

@@ -5,7 +5,7 @@
   <?= $this->include('Components/Organisms/Navigations/Navbar'); ?>
   <!-- End Section Navigation -->
 
-  <section id="main-content" class="container- mx-auto lg:px-[100px] lg:my-[50px]">
+  <section id="main-content" class="xl:container mx-auto lg:px-[100px] lg:my-[50px]">
     <!-- Section Breadcrumb -->
     <?= $this->include('Components/Molecules/Breadcrumbs/Index'); ?>
     <!-- End Section Breadcrumb -->

@@ -42,8 +42,9 @@
   }
 ?>
 
-<nav id="navbar" class="flex justify-between items-center bg-white px-[100px] py-10 bg-white">
-  <img src="images/app-logo.png" alt="app-logo">
+<nav id="navbar" class="flex justify-between items-center bg-white bg-white">
+  <div class="flex justify-between items-center bg-white xl:container px-[100px] py-10 mx-auto">
+    <img src="images/app-logo.png" alt="app-logo">
 
   <div class="list-menus flex items-center gap-[50px]">
     <?php foreach($listMenus as $menu): ?>
@@ -57,5 +58,6 @@
 
   <div class="btn-actions">
     <a href="#" class="text-gray-900 !bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-10 py-4 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 font-semibold !text-[#0D0C41] capitalize">Sign In</a>
+  </div>
   </div>
 </nav>

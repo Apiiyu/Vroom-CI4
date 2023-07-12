@@ -2,6 +2,7 @@
 
 <?= $this->section('content'); ?>
    <!-- Section Navbar -->
+   
    <?= $this->include('Components/Organisms/Navigations/Navbar'); ?>
   <!-- End Section Navbar -->
 

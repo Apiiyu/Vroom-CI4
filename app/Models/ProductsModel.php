@@ -5,6 +5,8 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class ProductsModel extends Model {
+
+  protected $DBGroup = 'default';
   protected $table = 'products';
 
   protected $primaryKey = 'id';
@@ -21,17 +23,12 @@ class ProductsModel extends Model {
   protected $deletedField = 'deleted_at';
 
   // Validation
-  public $requiredAndNumeric = 'required|numeric';
   protected $validationRules = [
     'name' => 'required',
     'full_name' => 'required',
     'type' => 'required',
-    'horse_power' => $this->requiredAndNumeric,
-    'speed_at' => $this->requiredAndNumeric,
     'drive_type' => 'required',
     'tracking' => 'required',
-    'price' => $this->requiredAndNumeric,
-    'rate' => $this->requiredAndNumeric,
     'image' => 'uploaded[image]|max_size[image,1024]|is_image[image]|mime_in[image,image/jpg,image/jpeg,image/png]'
   ];
   protected $validationMessages = [
@@ -75,4 +72,14 @@ class ProductsModel extends Model {
   ];
 
   protected $skipValidation = false;
+
+  public function __construct()
+  {
+    parent::__construct();
+
+    $this->validationRules['horse_power'] = 'required|numeric';
+    $this->validationRules['speed_at'] = 'required|numeric';
+    $this->validationRules['price'] = 'required|numeric';
+    $this->validationRules['rate'] = 'required|numeric';
+  }
 }

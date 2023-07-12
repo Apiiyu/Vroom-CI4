@@ -21,7 +21,7 @@
 
 
 
-<section id="hero" class="container lg:px-[100px] relative top-0 left-0 right-0 z-0">
+<section id="hero" class="xl:container mx-auto lg:px-[100px] relative top-0 left-0 right-0 z-0">
   <div id="main-content" class="w-full h-full relative top-0 left-0 right-0 z-0 mt-[70px] px-16">
     <h1 class="relative top-0 left-0 right-0 z-0 uppercase font-bold text-[#F5F6F6] text-[240px] tracking-tighter leading-[101.5%]">New Porsche</h1>
     <img src="images/porsche.png" class="absolute top-5 left-[50%] translate-x-[-50%] z-1 w-3/4" alt="porsche">
